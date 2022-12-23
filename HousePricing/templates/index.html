@@ -21,7 +21,95 @@
 
 {% block content %}
 
+{% include 'core/navbar.html' %}
+
+<div class="container">
+    <div class="mt-2">
+        <h1 class="display-1 text-light">
+            Bengaluru House Price Prediction
+        </h1>
+    </div>
+<a href="{% url 'prediction' %}" class="text-light mx-2">Start Prediction</a>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+            <h3 class='text-light display-6' >Top Loacation</h3>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="container mt-2">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="{% static 'core/img/indra.jfif' %}" alt="" height="200px">
+            <figcaption class="text-center text-light">Indra Nagar</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'core/img/mg.jpg' %}" alt="" height="200px" width="350px">
+            <figcaption class="text-center text-light">Rajaji Nagar</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'core/img/rajaji.webp' %}" alt="" height="200px">
+            <figcaption class="text-center text-light">MG Road</figcaption>
+        </div>
+    </div>
+</div>
 
 
+<div class="container">
+    <div class="mt-2">
+        <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, recusandae repudiandae doloribus molestiae aliquam sequi deserunt, dignissimos quod fugit dicta veniam, vero voluptatum odio placeat earum fugiat. Corrupti, atque dolore.</p>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+            <h3 class='text-light display-6' >Beautiful Bedrooms</h3>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="container mt-2">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="{% static 'core/img/1bhk.jpg' %}" alt="" height="200px">
+            <figcaption class="text-center text-light">1 BHK</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'core/img/2bhk.jfif' %}" alt="" height="200px" width="350px">
+            <figcaption class="text-center text-light">2 BHK</figcaption>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'core/img/3bhk.webp' %}" alt="" height="200px">
+            <figcaption class="text-center text-light">3 BHK</figcaption>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="mt-2">
+        <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, recusandae repudiandae doloribus molestiae aliquam sequi deserunt, dignissimos quod fugit dicta veniam, vero voluptatum odio placeat earum fugiat. Corrupti, atque dolore.</p>
+    </div>
+</div>
+
+
+<div class="container mt-3 text-center">
+    <a href="{% url 'prediction' %}" class="btn btn-primary">Start Prediction</a>
+</div>
+
+{% include 'core/footer.html' %}
 
 {% endblock content %}
