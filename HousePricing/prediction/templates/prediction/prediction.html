@@ -1,5 +1,5 @@
 {% extends 'core/base.html' %}
-
+{% load static %}
 {% block title %}
 
 <title>House Price Prediction</title>
@@ -8,7 +8,11 @@
 
 
 
+
+
 {% block content %}
+
+
 
 {% include 'core/navbar.html' %}
 
@@ -58,8 +62,8 @@
             </select>
         
         
-            <input type="submit" value="Estimate Price" class="btn btn-primary mt-3">
-        
+            <button class="btn btn-primary mt-3" id='estimateprice'>Estimate Price</button>
+            <script src="{% static 'prediction/js/prediction.js' %}"></script>
         </form>
     </div>
 </div>
