@@ -92,7 +92,7 @@ class index(View):
         return render(request, 'prediction/finalresult.html',{
 
             'data' : finalPrice,
-            'loaction' : userlocation,
+            'location' : userlocation,
             'sqft':usersqft,
             'bath' : userbath,
             'bhk' : userbhk
