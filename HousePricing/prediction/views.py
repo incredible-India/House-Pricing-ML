@@ -89,4 +89,4 @@ class index(View):
 
 
 
-        return HttpResponse(f'{finalPrice},{usersqft},{userbath} ,{userbhk}')
+        return render(request, 'prediction/finalresult.html')
