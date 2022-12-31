@@ -89,4 +89,11 @@ class index(View):
 
 
 
-        return render(request, 'prediction/finalresult.html')
+        return render(request, 'prediction/finalresult.html',{
+
+            'data' : finalPrice,
+            'loaction' : userlocation,
+            'sqft':usersqft,
+            'bath' : userbath,
+            'bhk' : userbhk
+        })
