@@ -4,6 +4,8 @@ from django.contrib import messages
 from django.views import View
 import pickle
 import numpy as np
+import pandas as pd
+import os
 # Create your views here.
 
 __MLmodel = None
@@ -96,4 +98,17 @@ class index(View):
             'sqft':usersqft,
             'bath' : userbath,
             'bhk' : userbhk
+        })
+
+
+
+class modelinfo(View):
+    def get(self, request):
+
+      
+        
+
+        
+        return render(request, 'prediction/modelinfo.html',{
+            
         })

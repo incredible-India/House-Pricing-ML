@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+{% block title %}
+
+<title>Model info </title>
+{% endblock title %}
+
+
+
+{% block content %}
+
+{% include 'core/navbar.html' %}
+
+
+<div class="container mt-2">
+    <h4 class="text-light">Dataset Information</h4>
+
+<p class="text-light">Datasets has been taken from 
+<a href="https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data" target="_blank" class="text-info">https://www.kaggle.com</a> 
+ or download datasets <a href="{% static 'prediction/datasets/house.csv' %}" class='text-info'>Download Dataset</a> </p>
+</div>
+
+
+<div class="container mt-2">
+    <h4 class="text-light">Machine Learning Model Information</h4>
+
+
+    <p class="text-light">We use Linear Regression to predict the price prediction</p>
+</div>
+
+
+{% endblock content %}
